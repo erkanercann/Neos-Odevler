@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26.03.2023 | Ödev-3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+
+        }
+
+        header {
+            background-color: #02475E;
+            width: 100%;
+            padding: 20px;
+
+        }
+
+        .header-logo {
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+
+
+        }
+
+        .nav-bar {
+            display: inline-block;
+            width: calc(100% - 150px);
+            text-align: right;
+
+        }
+
+        .nav-bar_items {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-bar_item {
+            display: inline-block;
+
+        }
+
+        .nav-bar_item a {
+
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 8px;
+        }
+
+        .nav-bar_item a:hover {
+            background-color: #ECF2FF;
+            color: #02475E;
+            border-radius: 5px;
+        }
+
+
+        #tanitim {
+            margin-top: 40px;
+        }
+
+        .row {
+            height: 100%;
+            margin-bottom: 80px;
+        }
+
+        .col-2 {
+            display: inline-block;
+            width: calc(50% - 2px);
+            height: 100%;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .stn-left {
+            background-image: url("images/neos.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+
+        }
+
+        .stn_right {
+            padding: 40px;
+
+        }
+
+
+        #contact {
+            background-color: #02475E;
+            position: relative;
+            bottom: -50px;
+
+
+        }
+
+        .col-1 {
+            margin: 0 auto;
+            color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a class="header-logo" href="#">Neos Yazılım</a>
+        <nav class="nav-bar">
+            <ul class="nav-bar_items">
+                <li class="nav-bar_item">
+                    <a href="index.html">Anasayfa</a>
+                </li>
+                <li class="nav-bar_item">
+                    <a href="#tanitim">Tanıtım</a>
+                </li>
+                <li class="nav-bar_item">
+                    <a href="#adress">Adres</a>
+                </li>
+                <li class="nav-bar_item">
+                    <a href="#contact">Bize Ulaşın</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-2 stn-left"></div>
+            <div class="col-2 stn_right">
+                <h1>NEOS Akademi</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum quod molestias! Autem ipsam
+                    quia
+                    amet impedit, deserunt vero fugiat molestias laborum asperiores iste. Quam nisi laboriosam sit ullam
+                    eos!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum quod molestias! Autem ipsam
+                    quia
+                    amet impedit, deserunt vero fugiat molestias laborum asperiores iste. Quam nisi laboriosam sit ullam
+                    eos!</p>
+            </div>
+        </div>
+    </section>
+    <section id="tanitim">
+        <div class="row">
+            <div class="col-2 ">
+                <h1>Tanıtım Videosu</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aspernatur est cum itaque veritatis
+                    corrupti doloremque saepe sunt minima, accusamus, ea obcaecati! Natus dolore nam inventore
+                    repudiandae,
+                    fugit optio sed?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aspernatur est cum itaque veritatis
+                    corrupti doloremque saepe sunt minima, accusamus, ea obcaecati! Natus dolore nam inventore
+                    repudiandae,
+                    fugit optio sed?</p>
+            </div>
+            <div class="col-2 ">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/67RAgYgkQ8Q"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="adress">
+        <div class="row">
+            <div class="col-2 ">
+                <h1>Adres</h1>
+                <address>
+                    Meşrutiyet Caddesi Meşrutiyet Mahallesi No: 18 Çelik iş hanı Kızılay/Ankara
+                </address>
+            </div>
+            <div class="col-2 ">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d191.25342229838438!2d32.8568395!3d39.9177908!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34fabb0e8fcef%3A0x9eb91e7af4654030!2zTWXFn3J1dGl5ZXQsIE1lxZ9ydXRpeWV0IENkLiBObzoxOCwgMDY0MjAgw4dhbmtheWEvQW5rYXJh!5e0!3m2!1str!2str!4v1679869537008!5m2!1str!2str"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="row">
+            <form action="">
+                <table class="col-1">
+                    <tr>
+                        <td>
+                            <label for="name">İsminiz ve Soyadınız:</label>
+                        </td>
+                        <td style="width: 50px;"></td>
+                        <td>
+                            <input type="text" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">E-posta Adresiniz:</label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="email" id="mail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Şifrenizi Giriniz:</label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="password" id="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password-repeat">Şifrenizi Tekrarlayınız:</label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="password" id="password-repeat">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="date">Doğum Tarihiniz:</label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="date" id="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file">Cv'nizi yükleyiniz:</label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="file" id="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Gönder">
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

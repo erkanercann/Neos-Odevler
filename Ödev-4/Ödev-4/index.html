@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            padding: 30px;
+
+        }
+        .bg{
+            width: 33.3%;
+            height: 33.3%;
+            border: 2px solid #000;
+            
+        }
+        .bg-1{
+            background-color: lightgreen;
+            margin-right: auto;
+            position: relative;
+            
+        }
+        .bg-2{
+            background-color: orange;
+            margin: auto;
+        }
+        .bg-3{
+            background-color: lightblue;
+            margin-left: auto;
+            position: relative;
+            
+        }
+        .box{
+            width: 25%;
+            height: 25%;
+            border: 2px solid #000;
+            
+        }
+        .box-1{
+            background-color: orange;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+            
+        }
+        .box-2{
+            background-color: lightblue;
+            margin: auto;
+            margin-top: 20px;
+   
+    
+        }
+        .box-3{
+            background-color: lightgreen;
+            position: absolute;
+            left: 5%;
+            top: 90%;
+            transform: translateY(-100%);
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="bg bg-1">
+            
+                <div class="box box-1"></div>
+           
+        </div>
+         <div class="bg bg-2">
+           
+                <div class="box box-2"></div>
+           
+        </div>
+         <div class="bg bg-3">
+          
+                <div class="box box-3"></div>
+           
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>

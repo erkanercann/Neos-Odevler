@@ -1,0 +1,200 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.header-title {
+    font-size: 6rem;
+}
+
+.header-lead {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 3.4rem;
+    font-weight: 900;
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+#header {
+    &-main {
+        .navbar {
+            padding-top: 0.8rem;
+
+            &-brand {
+                display: block;
+                width: 13rem;
+                height: 5rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                svg {
+
+                    path {
+                        fill: $custom;
+                    }
+                }
+            }
+
+            &-nav {
+                .nav-item {
+                    &.dropdown {
+                        border-radius: 0.2rem;
+                        border: 1px solid $light;
+
+                        .nav-link {
+                            padding-top: 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-content {
+            .card {
+                height: 78vh;
+                border-radius: 3rem;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(65deg, rgba(0, 8, 29, 0.6) 10%, rgba(53, 13, 49, 0.8) 70%, rgba(132, 5, 25, 0.9) 101.01%);
+                    border-radius: 1rem;
+                }
+
+                &-img {
+                    display: block;
+                    max-width: 100%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: left top;
+                }
+            }
+
+            &-title {
+                position: absolute;
+                top: 20%;
+                left: 7%;
+                color: #fff;
+                width: 60%;
+            }
+        }
+    }
+}
+
+#main {
+    background: linear-gradient(146.51deg, rgba(0, 8, 29, 0.75) 0%, rgba(53, 13, 49, 0.6) 80.34%, rgba(132, 5, 25, 0.6) 110.79%);
+    border-radius: 16px;
+    margin: 3rem;
+
+    .container-fluid {
+
+        #section {
+            &__a {
+                padding: 1rem 6rem;
+
+                .container-fluid {
+
+
+                    div {
+                        align-self: center;
+                        color: #fff;
+                        width: 55%;
+
+                    }
+
+                    .section-img-wrapper {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .separate {
+            background-color: $custom4;
+            height: 0.8rem;
+            width: 80%;
+            margin: auto;
+        }
+
+    }
+}
+
+#section {
+    &__questions {
+        .container-fluid {
+            padding: 0 15rem;
+
+            .accordion {
+
+                &-item {
+                    margin-bottom: 1rem;
+                }
+
+                &-button {
+                    font-size: 1.5rem;
+                }
+
+                &-body {
+                    p {
+                        font-size: 1.5rem
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    &-main {
+        .container-fluid {
+            padding: 5rem 15rem;
+
+            p {
+                font-size: 16px;
+                color: gray;
+
+                a {
+                    color: gray;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 1rem;
+                list-style: none;
+                padding: 0;
+
+                li {
+                    flex: 25%;
+
+                    a {
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}
